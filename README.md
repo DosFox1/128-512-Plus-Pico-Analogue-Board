@@ -114,3 +114,4 @@ Owing to the fact that the board is a relatively simple two layer design, the bo
 The cost of my boards came to $2 for five, but should usually be $4 for five PCBs - regardless - they are cheap!
 The firmware that generates a VGA signal and targets a standard V1 Pico (RP2040 based) has been added to this repository. 
 Pico2 (RP2354) and PAL video versions will be added shortly.
+For assembling into cases, SVGs of the board have been added - just import the board edge file to your favourite SVG editor to start designing a case for it!
