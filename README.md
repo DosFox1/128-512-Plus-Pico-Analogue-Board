@@ -16,10 +16,14 @@ https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf
 
 The PSU portion of the deisgn is intended to be used with a Pico PSU, although any suitable ATX PSU can be used. 
 The connector is identical to that of the Macintosh 128/512/Plus, so either a Molex KK396 11 way connector can be installed with an appropriate cable,
-or the board can be soldered direcrtly to the Macintosh Logic Board.
+or the board can be soldered directly to the Macintosh Logic Board.
 
 Please note that this is a VDEV1 board (I.E, untested) so some changes and errata may be made at some point. 
 However, I have built an equivalent system using a Pimoroni VGA board (as per the original repository) and with a Pico ATX PSU - so it theoretically should work.
+
+
+![photo_2024-08-20 21 39 24](https://github.com/user-attachments/assets/88271ef8-4a55-4f9a-b27b-e36976ec2192)
+
 
 **Additional Features**
 
@@ -67,7 +71,7 @@ CN6      2way             PIN_HEADER_2W_VERT_TH        2W_2.54MM_PITCH_VERT_TH C
 CN7      DB15             DB15                         DB15                    SparkFun-Retired    1
 CN8      ATX24RH          ATX24RH                      ATX24_RIGHT_ANGLE       SparkFun-Connectors 1
 CN9      RCA              RCA                          RCA                     SparkFun-Connectors 1
-CN10                      KK-156-11                    KK-156-11               con-molex           1
+CN10     11 Way KK        KK-156-11                    KK-156-11               con-molex           1
 D1       1N4004           1N4004                       DO41-10                 adafruit            1
 D2       1N4004           1N4004                       DO41-10                 adafruit            1
 LED1     Red              5MM_LED_RED                  5MM_TH_VERT_STANDARD    Optoelectronics     1
