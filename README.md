@@ -54,7 +54,7 @@ I would suggest ensuring that the battery pack is stored well away from the logi
 
 **Part List**
 
-Much like the Sony SND, the parts are relatively easy to source, and the board has been designed so anyone with decent soldering experience should be able to assemble one. 
+Much like the Sony SND, the parts are relatively easy to source, although there may be some difficulty finding the precision value resistors. 
 The parts are as follows:
 
 <pre>
@@ -105,3 +105,9 @@ SW1      SS12D16-GDN5     SS12D16-GDN5                 THRUHOLE90DEGSLIDESW    S
 VREG1                     7905T                        TO220H                  linear              1
 </pre>
 
+**Notes on Assembly**
+
+The board has been designed so anyone with a decent amount of soldering experience should be able to assemble one. 
+The PCBs themselves can be ordered from your favourite PCB fab house, mine have been ordered from JLCPCB (sorry PCBWay).
+Owing to the fact that the board is a relatively simple two layer design, the boards shouldn't be too expensive.
+The cost of my boards came to $2 for five, but should usually be $4 for five PCBs - regardless - they are cheap!
