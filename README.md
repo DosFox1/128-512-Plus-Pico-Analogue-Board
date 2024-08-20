@@ -1,6 +1,7 @@
 **A Pico ATX and Pi Pico Power Supply and Scan Converter for the Macintosh 128/512/Plus**
 
 A board to power a Macintosh 128/512/Plus from a Pico ATX PSU, as well as to generate a VGA video signal from an onboard Pico scan converter.
+This board was designed inconjunction with the Sony SND Replacement to support my work on the Macintosh Plus clone.
 
 ![PicoABBoardFront](https://github.com/user-attachments/assets/419713a1-d29e-4005-930a-13e1a480d75a)
 
