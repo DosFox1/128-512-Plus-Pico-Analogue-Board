@@ -24,6 +24,7 @@ However, I have built an equivalent system using a Pimoroni VGA board (as per th
 **Additional Features**
 
 Aside from providing Power and a VGA signal from the Logic board, it also has some additional features:
+
 1) Option for Composite Video with associated jumper -  the scan converter can be compiled to generate a PAL video signal from the red channel,
 as such, there is an RCA connector with a jumper to select whether the required output.
 Please note that the firmware will need to be recompiled with the PAL video option, and the video signal is known to be quite poor.
@@ -35,9 +36,7 @@ In normal operation, the -5v regulator and pads are not needed, and can be DNF'd
 
 3) Optional potential divider - the original scan converter does call for the use of a standard voltage level shifter, it was found that the 128/512/Plus appear to output
 a signal that was lower than what the level shifter expected, resulting in the system not working. Further investigation reveals that the output from the board is in the region
-of 3.8v - which is in the limits of the Pico. However, current limiting resistors have been added, and if so desired, additional resistors can be added (or diodes!) for added protection. This is a VDEV1 unit, so extra protection may be added for the next iteration.
-
-  Your mileage may vary!
+of 3.8v - which is in the limits of the Pico. However, current limiting resistors have been added, and if so desired, additional resistors can be added (or diodes!) for added protection. This is a VDEV1 unit, so extra protection may be added for the next iteration. Your mileage may vary!
 
 5) Speaker pin header - the speaker output is routed to a separate pin header, to make it easier to add an external speaker.
 
