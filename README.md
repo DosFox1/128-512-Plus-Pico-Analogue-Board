@@ -112,3 +112,5 @@ The board has been designed so anyone with a decent amount of soldering experien
 The PCBs themselves can be ordered from your favourite PCB fab house, mine have been ordered from JLCPCB (sorry PCBWay).
 Owing to the fact that the board is a relatively simple two layer design, the boards shouldn't be too expensive.
 The cost of my boards came to $2 for five, but should usually be $4 for five PCBs - regardless - they are cheap!
+The firmware that generates a VGA signal and targets a standard V1 Pico (RP2040 based) has been added to this repository. 
+Pico2 (RP2354) and PAL video versions will be added shortly.
