@@ -1,4 +1,4 @@
-[ATX_VGA_Analog_Board.txt](https://github.com/user-attachments/files/16681527/ATX_VGA_Analog_Board.txt)# 128-512-Plus-Pico-Analogue-Board
+**A Pico ATX and Pi Pico Power Supply and Scan Converter for the Macintosh 128/512/Plus**
 
 A board to power a Macintosh 128/512/Plus from a Pico ATX PSU, as well as to generate a VGA video signal from an onboard Pico scan converter.
 
@@ -33,11 +33,11 @@ It's something to be fixed at some point.
 (https://github.com/DosFox1/Sony-SND-THT-Replacement/tree/main), or if a board is installed that requires off board -5v to be regulated (such as an SE)
 In normal operation, the -5v regulator and pads are not needed, and can be DNF'd (Do Not Fit).
 
-3) optional potential divider - the original scan converter does call for the use of a standard voltage level shifter, it was found that the 128/512/Plus appear to output
+3) Optional potential divider - the original scan converter does call for the use of a standard voltage level shifter, it was found that the 128/512/Plus appear to output
 a signal that was lower than what the level shifter expected, resulting in the system not working. Further investigation reveals that the output from the board is in the region
 of 3.8v - which is in the limits of the Pico. However, current limiting resistors have been added, and if so desired, additional resistors can be added (or diodes!) for added protection. This is a VDEV1 unit, so extra protection may be added for the next iteration.
 
-Your mileage may vary!
+  Your mileage may vary!
 
 5) Speaker pin header - the speaker output is routed to a separate pin header, to make it easier to add an external speaker.
 
@@ -54,7 +54,7 @@ I would suggest ensuring that the battery pack is stored well away from the logi
 Much like the Sony SND, the parts are relatively easy to source, and the board has been designed so anyone with decent soldering experience should be able to assemble one. 
 The parts are as follows:
 
-
+<pre>
 Part     Value            Device                       Package                 Library             Sheet
 
 C1       100n 50V         100N_TH_CAP                  CAP_5.08MM_PITCH        Capacitors TH       1
@@ -100,5 +100,5 @@ SP1      1PIN             1PIN                         1PIN                    g
 SP2      1PIN             1PIN                         1PIN                    generic parts       1
 SW1      SS12D16-GDN5     SS12D16-GDN5                 THRUHOLE90DEGSLIDESW    Switches            1
 VREG1                     7905T                        TO220H                  linear              1
-alog_Board.txt…]()
+</pre>
 
