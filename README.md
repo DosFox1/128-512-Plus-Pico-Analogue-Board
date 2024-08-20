@@ -1,10 +1,11 @@
 # 128-512-Plus-Pico-Analogue-Board
+
 A board to power a Macintosh 128/512/Plus from a Pico ATX PSU, as well as to generate a VGA video signal from an onboard Pico scan converter.
 
 ![PicoABBoardFront](https://github.com/user-attachments/assets/419713a1-d29e-4005-930a-13e1a480d75a)
 
-
 **So, What Is It?**
+
 This is a combined power supply and VGA scan converter for a Macintosh 128/512 or Plus.
 The VGA scan converter is based off the work by the GuruThree:
 https://github.com/guruthree/mac-se-video-converter
@@ -21,6 +22,7 @@ Please note that this is a VDEV1 board (I.E, untested) so some changes and errat
 However, I have built an equivalent system using a Pimoroni VGA board (as per the original repository) and with a Pico ATX PSU - so it theoretically should work.
 
 **Additional Features**
+
 Aside from providing Power and a VGA signal from the Logic board, it also has some additional features:
 1) Option for Composite Video with associated jumper -  the scan converter can be compiled to generate a PAL video signal from the red channel,
 as such, there is an RCA connector with a jumper to select whether the required output.
@@ -48,92 +50,94 @@ I would suggest ensuring that the battery pack is stored well away from the logi
 
 
 **Part List**
+
 Much like the Sony SND, the parts are relatively easy to source, and the board has been designed so anyone with decent soldering experience should be able to assemble one. 
 The parts are as follows:
-Part     Value            Device                       Package                 Library             Sheet
 
-C1       100n 50V         100N_TH_CAP                  CAP_5.08MM_PITCH        Capacitors TH       1
+Part     Value                     Device                                                  Package                                   Library                      Sheet
 
-C2       100n 50V         100N_TH_CAP                  CAP_5.08MM_PITCH        Capacitors TH       1
+C1  100n 50V                  100N_TH_CAP                                    CAP_5.08MM_PITCH                 Capacitors TH                1
 
-CN1      V06-1x20-SV-GF-1 PICO_BOARD                   PICO_SOCKET             uProcessor          1
+C2                100n 50V                  100N_TH_CAP                                    CAP_5.08MM_PITCH                 Capacitors TH                1
 
-CN2      2way             PIN_HEADER_2W_VERT_TH        2W_2.54MM_PITCH_VERT_TH Connectors          1
+CN1      V06-1x20-SV-GF-1 PICO_BOARD                                     PICO_SOCKET                      uProcessor                   1
 
-CN3      2way             PIN_HEADER_2W_VERT_TH        2W_2.54MM_PITCH_VERT_TH Connectors          1
+CN2      2way                      PIN_HEADER_2W_VERT_TH                 2W_2.54MM_PITCH_VERT_TH Connectors                   1
 
-CN4      V06-1x3-SV-GF-1  PIN_HEADER_3W_VERT_FEMALE_TH 3W_2.54MM_PITCH_VERT_TH Connectors          1
+CN3      2way                      PIN_HEADER_2W_VERT_TH                 2W_2.54MM_PITCH_VERT_TH Connectors                   1
 
-CN5      2way             PIN_HEADER_2W_VERT_TH        2W_2.54MM_PITCH_VERT_TH Connectors          1
+CN4      V06-1x3-SV-GF-1  PIN_HEADER_3W_VERT_FEMALE_TH 3W_2.54MM_PITCH_VERT_TH Connectors                   1
 
-CN6      2way             PIN_HEADER_2W_VERT_TH        2W_2.54MM_PITCH_VERT_TH Connectors          1
+CN5      2way                      PIN_HEADER_2W_VERT_TH                 2W_2.54MM_PITCH_VERT_TH Connectors                   1
 
-CN7      DB15             DB15                         DB15                    SparkFun-Retired    1
+CN6      2way                      PIN_HEADER_2W_VERT_TH                 2W_2.54MM_PITCH_VERT_TH Connectors                   1
 
-CN8      ATX24RH          ATX24RH                      ATX24_RIGHT_ANGLE       SparkFun-Connectors 1
+CN7      DB15                      DB15                                                    DB15                                      SparkFun-Retired    1
 
-CN9      RCA              RCA                          RCA                     SparkFun-Connectors 1
+CN8      ATX24RH                   ATX24RH                                                 ATX24_RIGHT_ANGLE                SparkFun-Connectors 1
 
-CN10                      KK-156-11                    KK-156-11               con-molex           1
+CN9      RCA                                RCA                                                     RCA                                                SparkFun-Connectors 1
 
-D1       1N4004           1N4004                       DO41-10                 adafruit            1
+CN10                                                 KK-156-11                                      KK-156-11                                 con-molex                    1
 
-D2       1N4004           1N4004                       DO41-10                 adafruit            1
+D1                1N4004                    1N4004                                                  DO41-10                                   adafruit                     1
 
-LED1     Red              5MM_LED_RED                  5MM_TH_VERT_STANDARD    Optoelectronics     1
+D2                1N4004                    1N4004                                                  DO41-10                                   adafruit                     1
 
-R1       470R             470R_TH_RESISTOR             RESISTORTHRUHOLE        Resistors TH        1
+LED1     Red                                5MM_LED_RED                                    5MM_TH_VERT_STANDARD    Optoelectronics     1
 
-R2       47R              47R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R1                470R                      470R_TH_RESISTOR                      RESISTORTHRUHOLE                 Resistors TH                 1
 
-R3       47R              47R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R2                47R                                47R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R4       1k               1K_TH_RESISTOR               RESISTORTHRUHOLE        Resistors TH        1
+R3                47R                                47R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R5       2k               2K2_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R4                1k                                 1K_TH_RESISTOR                                 RESISTORTHRUHOLE                 Resistors TH                 1
 
-R6       4k02             4K7_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R5                2k                                 2K2_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R7       8k06             68K_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R6                4k02                      4K7_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R8       499R             470R_TH_RESISTOR             RESISTORTHRUHOLE        Resistors TH        1
+R7                8k06                      68K_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R9       1k               1K_TH_RESISTOR               RESISTORTHRUHOLE        Resistors TH        1
+R8                499R                      470R_TH_RESISTOR                      RESISTORTHRUHOLE                 Resistors TH                 1
 
-R10      2k               2K2_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R9                1k                                 1K_TH_RESISTOR                                 RESISTORTHRUHOLE                 Resistors TH                 1
 
-R11      4k02             4K7_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R10      2k                                 2K2_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R12      8k06             68K_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R11      4k02                      4K7_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R13      499R             470R_TH_RESISTOR             RESISTORTHRUHOLE        Resistors TH        1
+R12      8k06                      68K_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R14      1k               1K_TH_RESISTOR               RESISTORTHRUHOLE        Resistors TH        1
+R13      499R                      470R_TH_RESISTOR                      RESISTORTHRUHOLE                 Resistors TH                 1
 
-R15      2k               2K2_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R14      1k                                 1K_TH_RESISTOR                                 RESISTORTHRUHOLE                 Resistors TH                 1
 
-R16      4k02             4K7_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R15      2k                                 2K2_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R17      8k06             68K_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R16      4k02                      4K7_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R18      499R             470R_TH_RESISTOR             RESISTORTHRUHOLE        Resistors TH        1
+R17      8k06                      68K_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R19      22R              22R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R18      499R                      470R_TH_RESISTOR                      RESISTORTHRUHOLE                 Resistors TH                 1
 
-R20      22R              22R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R19      22R                                22R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R21      22R              22R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R20      22R                                22R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R22      DNF              22R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R21      22R                                22R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R23      DNF              22R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R22      DNF                                22R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-R24      DNF              22R_TH_RESISTOR              RESISTORTHRUHOLE        Resistors TH        1
+R23      DNF                                22R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-SP1      1PIN             1PIN                         1PIN                    generic parts       1
+R24      DNF                                22R_TH_RESISTOR                                RESISTORTHRUHOLE                 Resistors TH                 1
 
-SP2      1PIN             1PIN                         1PIN                    generic parts       1
+SP1      1PIN                      1PIN                                                    1PIN                                      generic parts                1
 
-SW1      SS12D16-GDN5     SS12D16-GDN5                 THRUHOLE90DEGSLIDESW    Switches            1
+SP2      1PIN                      1PIN                                                    1PIN                                      generic parts                1
 
-VREG1                     7905T                        TO220H                  linear              1
+SW1      SS12D16-GDN5     SS12D16-GDN5                                   THRUHOLE90DEGSLIDESW    Switches                     1
+
+VREG1                                                7905T                                                   TO220H                                    linear                                1
