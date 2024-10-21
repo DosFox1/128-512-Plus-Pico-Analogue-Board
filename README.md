@@ -115,3 +115,7 @@ The firmware that generates a VGA signal and targets a standard V1 Pico (RP2040 
 Pico2 (RP2354) and PAL video versions will be added eventually. Current firmware now fixes an annoying issue where the video output
 was distinctly yellow - this has now been fixed.
 For assembling into cases, SVGs of the board have been added - just import the board edge file to your favourite SVG editor to start designing a case for it!
+
+**Note On The License**
+The hardware design is based on the CERN Open Hardware Licence Version 2 - Strongly Reciprocal, however, the software is covered by the original MIT License. Please see:
+https://github.com/guruthree/mac-se-video-converter/
